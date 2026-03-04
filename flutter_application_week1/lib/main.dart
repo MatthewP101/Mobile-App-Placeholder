@@ -4,23 +4,31 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Container(
+        body:  AppContainer(),
+      ),
+    ),
+  );
+}
+
+class AppContainer extends StatelessWidget {
+  @override
+ Widget build(context) {
+return Container(
           decoration: const BoxDecoration(color: Colors.black),
           child: const Center(
             child: Text(
-              "NETFLIX",
+              "classwidget",
               style: TextStyle(
                 color: Color.fromARGB(255, 255, 0, 0),
                 fontSize: 75,
                 fontFamily: "BebasNeue",
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w300,
               ),
             ),
           ),
-        ),
-      ),
-    ),
-  );
+        );
+}
+
 }
 
 /*void main() {
