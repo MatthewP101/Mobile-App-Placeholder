@@ -14,14 +14,16 @@ class AppContainer extends StatelessWidget {
         gradient: LinearGradient(
           colors: [
             Color.fromARGB(255, 0, 0, 0),
-            Color.fromARGB(255, 255, 0, 0),
+            Color.fromARGB(255, 44, 28, 28),
           ],
           begin: startAlignment,
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: AppText("NETFLIX"),
+      child:  Center(
+        child: Image.asset("assets/images/tree.jpg")
+        //AppText("Netflix")
+        
       ),
     );
   }
