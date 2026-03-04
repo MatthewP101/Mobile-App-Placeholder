@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_week1/roll.dart';
 //import 'package:flutter_application_week1/app_text.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class AppContainer extends StatelessWidget {
-  const AppContainer({super.key});
+   AppContainer({super.key});
+
+  var actimg = 'assets/images/tree.jpg';
+
+  void treec(){
+    actimg = 'assets/images/tree2.jpg';
+    print("algebraic");
+  }
 
   void alg() {}
   @override
@@ -21,28 +29,8 @@ class AppContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset("assets/images/tree.jpg"),
-            const SizedBox(height: 20,),
-            TextButton(
-              onPressed: alg,
-              style: TextButton.styleFrom(
-                padding: const EdgeInsets.only(top: 20, bottom: 20),
-                foregroundColor: Colors.orange,
-                textStyle: const TextStyle(
-                  fontSize: 45,
-                  fontFamily: "BebasNeue",
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 2,
-                ),
-              ),
-              child: const Text("Algebraic"),
-            ),
-          ],
-        ),
+      child:  Center(
+        child: rolls(),
       ),
     );
   }
