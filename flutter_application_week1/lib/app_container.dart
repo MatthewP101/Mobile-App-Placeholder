@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_week1/app_text.dart';
 
 class AppContainer extends StatelessWidget {
   const AppContainer({super.key});
@@ -6,17 +7,9 @@ class AppContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(color: Colors.black),
+      decoration: const BoxDecoration(color: Color.fromARGB(255, 0, 0, 0)),
       child: const Center(
-        child: Text(
-          "classwidget",
-          style: TextStyle(
-            color: Color.fromARGB(255, 51, 143, 82),
-            fontSize: 75,
-            fontFamily: "BebasNeue",
-            fontWeight: FontWeight.w300,
-          ),
-        ),
+        child:AppText(),
       ),
     );
   }
