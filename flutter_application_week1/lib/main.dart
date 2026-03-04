@@ -3,8 +3,8 @@ import 'package:flutter_application_week1/app_container.dart';
 
 void main() {
   runApp(
-     MaterialApp(
-      home:  Scaffold(
+    const MaterialApp(
+      home: Scaffold(
         body: AppContainer(),
       ),
     ),
