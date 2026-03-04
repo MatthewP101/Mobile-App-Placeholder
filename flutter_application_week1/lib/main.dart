@@ -13,7 +13,16 @@ void main() {
               ],
             ),
           ),
-          child: const Center(child: Text("Center Text")),
+          child: const Center(
+            child: Text(
+              "Center Text",
+              style: TextStyle(
+                fontSize: 80,
+                fontFamily: "BebasNeue",
+                color: Color.fromARGB(255, 230, 215, 12),
+              ),
+            ),
+          ),
         ),
       ),
     ),
