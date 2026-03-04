@@ -1,35 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_week1/app_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        body:  AppContainer(),
+     MaterialApp(
+      home:  Scaffold(
+        body: AppContainer(),
       ),
     ),
   );
 }
 
-class AppContainer extends StatelessWidget {
-  @override
- Widget build(context) {
-return Container(
-          decoration: const BoxDecoration(color: Colors.black),
-          child: const Center(
-            child: Text(
-              "classwidget",
-              style: TextStyle(
-                color: Color.fromARGB(255, 255, 0, 0),
-                fontSize: 75,
-                fontFamily: "BebasNeue",
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-          ),
-        );
-}
 
-}
 
 /*void main() {
   runApp(
