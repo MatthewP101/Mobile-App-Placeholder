@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
 void main() {
-runApp(const MaterialApp());
-
+  runApp(const MaterialApp(home: Text("no scaffold"))
+  );
 }
-
-
-
