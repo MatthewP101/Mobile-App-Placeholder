@@ -11,7 +11,7 @@ class AppText extends StatelessWidget {
       text,
       style: const TextStyle(
         color: Color.fromARGB(255, 255, 0, 0),
-        fontSize: 75,
+        fontSize: 45,
         fontFamily: "BebasNeue",
         fontWeight: FontWeight.w600,
         letterSpacing: 2,
